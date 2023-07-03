@@ -27,7 +27,7 @@ jobs:
             ${{ runner.OS }}-
 
       - name: Install
-        run: npm install --legacy-peer-deps
+        run: npm install
 
       - name: Build
         run: npm run build
