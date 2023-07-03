@@ -26,11 +26,11 @@ jobs:
             ${{ runner.OS }}-build-
             ${{ runner.OS }}-
 
-      - name: Cache Delete
-        run: npm cache clean --force
-
       - name: Install
         run: npm install --legacy-peer-deps
+      
+      - name: Bootstrap
+        run: npm install bootstrap --save 
 
       - name: Build
         run: npm run build
