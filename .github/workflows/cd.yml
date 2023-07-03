@@ -28,9 +28,6 @@ jobs:
 
       - name: Install
         run: npm install --legacy-peer-deps
-      
-      - name: Bootstrap
-        run: npm install bootstrap --save --legacy-peer-deps
 
       - name: Build
         run: npm run build
