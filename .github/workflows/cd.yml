@@ -26,8 +26,10 @@ jobs:
             ${{ runner.OS }}-build-
             ${{ runner.OS }}-
 
-      - name: Install
+      - name: Cache Delete
         run: npm cache clean --force
+
+      - name: Install
         run: npm install
 
       - name: Build
